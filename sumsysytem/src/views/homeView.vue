@@ -15,8 +15,8 @@
       </div>
       <el-container>
         <el-main>
-          <el-row>
-            <el-col :span="6" v-for="system in systems" :key="system.index">
+          <el-row :gutter="20">
+            <el-col :xs="24" :sm="12" :md="8" :lg="6" :xl="6" v-for="system in systems" :key="system.index">
               <el-card :body-style="{ padding: '0px' }" class="box-card" @click="open(system.url)">
                 <div style="padding: 14px;">
                   {{ system.name }}
@@ -39,12 +39,12 @@
   </el-container>
 </template>
 
-<script lang="ts" setup>
+<script lang="js" setup>
 import { ref } from 'vue'
 const systems = [
   { index: '1', name: '一系统', url: '/system1/', description: '本系统的主要功能包括:音乐播放器,留言板,扫雷游戏,个人日志等' },
   { index: '2', name: '二系统', url: '/system2/', description: '本系统的主要功能包括:原神星铁文案查询,星铁账号查询,股票查询' },
-  // 更多系统...
+  { index: '3', name: '三系统', url: '/system3/', description: '本系统的主要功能包括:托福,GRE等英文单词的记忆' },
 ]
 const activeLang = ref('vue')
 const ICP = ref('沪ICP备202405831号');
