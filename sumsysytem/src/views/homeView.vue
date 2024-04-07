@@ -45,6 +45,7 @@ const systems = [
   { index: '1', name: '一系统', url: '/system1/', description: '本系统的主要功能包括:音乐播放器,留言板,扫雷游戏,个人日志等' },
   { index: '2', name: '二系统', url: '/system2/', description: '本系统的主要功能包括:原神星铁文案查询,星铁账号查询,股票查询' },
   { index: '3', name: '三系统', url: '/system3/', description: '本系统的主要功能包括:托福,GRE等英文单词的记忆' },
+  { index: '4', name: '四系统', url: '/system4/', description: '本系统的主要功能包括:通信功能，原理包括轮询和websocket' },
 ]
 const activeLang = ref('vue')
 const ICP = ref('沪ICP备202405831号');
